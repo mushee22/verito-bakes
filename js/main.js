@@ -130,6 +130,19 @@
         loop: true,
         items: 1
     });
-    
+    $(".trusted_patners").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1500,
+        loop: true,
+        items: 5,
+        480 : {
+            items: 2,
+        },
+        // breakpoint from 768 up
+        768 : {
+            items: 3,
+            
+        }
+    });
 })(jQuery);
 
