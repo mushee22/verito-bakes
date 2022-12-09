@@ -58,6 +58,7 @@
         dots: false,
         loop: true,
         nav : true,
+        responsiveClass:true,
         navText : [
             '<i class="fa fa-angle-left" aria-hidden="true"></i>',
             '<i class="fa fa-angle-right" aria-hidden="true"></i>'
@@ -87,6 +88,7 @@
         dots: false,
         loop: true,
         nav : true,
+     
         navText : [
             '<i class="fa fa-angle-left" aria-hidden="true"></i>',
             '<i class="fa fa-angle-right" aria-hidden="true"></i>'
@@ -131,17 +133,26 @@
         items: 1
     });
     $(".trusted_patners").owlCarousel({
-        autoplay: true,
+        autoplay: false,
         smartSpeed: 1500,
+        margin: 30,
+        dots: true,
         loop: true,
-        items: 5,
-        480 : {
-            items: 2,
-        },
-        // breakpoint from 768 up
-        768 : {
-            items: 3,
-            
+       
+        responsiveClass:true,
+        responsive: {
+            0:{
+                items:1
+            },
+            576:{
+                items:2
+            },
+            768:{
+                items:3
+            },
+            992:{
+                items:4
+            }
         }
     });
 })(jQuery);
